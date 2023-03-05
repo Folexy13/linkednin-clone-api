@@ -28,7 +28,7 @@ dotenv.config();
 const getConfig = () => {
     return {
         NODE_ENV: process.env.NODE_ENV,
-        PORT: Number(process.env.PORT),
+        PORT: Number(process.env.PORT) || 8806,
         SSL: true,
         JWTSECRET: process.env.JWTSECRET,
         JWT_EXPIRY_TIME: process.env.JWT_EXPIRY_TIME,
